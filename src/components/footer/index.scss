@@ -1,0 +1,40 @@
+@import '../../assets/sass/02_variables';
+
+.app-footer {
+  background: $bg-dark-grey;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: white;
+  .feature {
+    display: flex;
+    align-items: center;
+    background: $bg-dark-grey;
+  .feature-ic {
+      color: $orange-accent;
+      font-size: 2.5rem;
+      margin-right: 1rem;
+    }
+    .label-main {
+      font-weight: 600;
+    }
+    .label-more {
+      font-size: 0.9rem;
+    }
+  }
+  .footer-section {
+    .section-title {
+      font-weight: bold;
+    }
+    .info-item {
+      color: $text-muted;
+      font-size: 0.9rem;
+    }
+  }
+  .copyright {
+    color: $text-muted;
+    font-size: 0.9rem;
+  }
+  .separator {
+    opacity: 0.2;
+  }
+}

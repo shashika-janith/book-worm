@@ -1,0 +1,32 @@
+@import "../../../assets/sass/02_variables";
+
+.books-wrapper {
+  display: flex;
+  flex-flow: wrap;
+  flex-grow: 0;
+  gap: 0.5rem;
+  flex-basis: calc(20% - 2rem / 5);
+  .book-card {
+    width: calc(20% - 2rem / 5);
+    padding: 1.5rem;
+    border: 1px solid $border-grey;
+    transition: 0.4s background;
+    .type {
+      color: $theme-color-primary;
+      font-size: 0.9rem;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      height: 2.6rem;
+    }
+    .currency {
+      font-size: 0.9rem;
+    }
+    &:hover {
+      background: rgba($theme-color-primary, 0.15);
+      border: 1px solid rgba($theme-color-primary, 0.15);
+    }
+  }
+}

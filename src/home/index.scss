@@ -1,0 +1,21 @@
+@import '../assets/sass/02_variables';
+
+.cat-holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.product-category {
+  flex-grow: 0;
+  flex-basis: calc(100%/4 - 3rem/4);
+
+  .cat-icon {
+    font-size: 3.125rem;
+    color: $theme-color-primary-active;
+  }
+}
+
+.bg-chili-light {
+  background-color: rgba($theme-color-primary, 0.15);
+}

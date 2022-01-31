@@ -1,0 +1,29 @@
+@import '../../assets/sass/02_variables';
+
+.not-found-layout {
+  background-color: $bg-warm-grey;
+  .card {
+    background-color: $white;
+    padding: 4rem;
+    width: 35rem;
+  }
+  .ic-not-found {
+    height: 12rem;
+  }
+  .title {
+    font-size: 5.3rem;
+    line-height: 5.3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .message {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $text-muted;
+  }
+  .btn-home {
+    display: block;
+    border-color: $theme-color-primary;
+    background-color: $theme-color-primary;
+  }
+}

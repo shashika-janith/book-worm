@@ -1,0 +1,42 @@
+export const books = [
+  {
+    id: 1,
+    title: "Think Like a Monk: Train Your Mind for Peace and Purpose Everyday",
+    author: "Jay Shetty",
+    price: 2900,
+    type: "Paperback",
+    coverImg: "",
+  },
+  {
+    id: 1,
+    title: "Think Like a Monk: Train Your Mind for Peace and Purpose Everyday",
+    author: "Jay Shetty",
+    price: 2900,
+    type: "Paperback",
+    coverImg: "",
+  },
+  {
+    id: 1,
+    title: "Think Like a Monk: Train Your Mind for Peace and Purpose Everyday",
+    author: "Jay Shetty",
+    price: 2900,
+    type: "Paperback",
+    coverImg: "",
+  },
+  {
+    id: 1,
+    title: "Think Like a Monk: Train Your Mind for Peace and Purpose Everyday",
+    author: "Jay Shetty",
+    price: 2900,
+    type: "Paperback",
+    coverImg: "",
+  },
+  {
+    id: 1,
+    title: "Think Like a Monk: Train Your Mind for Peace and Purpose Everyday",
+    author: "Jay Shetty",
+    price: 2900,
+    type: "Paperback",
+    coverImg: "",
+  },
+];

@@ -1,0 +1,33 @@
+@import '../../assets/sass/02_variables';
+
+.book-details-wrapper {
+  .book-title {
+    font-weight: 600;
+  }
+
+  .price-wrapper {
+    display: table-cell;
+    vertical-align: bottom;
+    .price {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      font-weight: 600;
+    }
+    .price-dis {
+      font-size: 0.9rem;
+      line-height: 0.9rem;
+      color: $text-muted;
+    }
+  }
+
+  .book-desc-wrapper {
+    white-space: break-spaces;
+  }
+
+  .tabs-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0
+  }
+}

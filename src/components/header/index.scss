@@ -1,0 +1,9 @@
+@import '../../assets/sass/02_variables';
+
+.app-nav {
+  background: $bg-dark-grey;
+
+  .ic-nav-item {
+    font-size: 1.2rem;
+  }
+}

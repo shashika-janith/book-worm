@@ -1,8 +1,8 @@
-import React from 'react';
 import {
   BrowserRouter as Router,
+  Navigate,
   Route,
-  Switch,
+  Routes,
   Redirect,
 } from 'react-router-dom';
 
@@ -13,35 +13,50 @@ import Error from './views/error';
 import ContactUs from './views/contact-us';
 import NotFound from './views/not-found';
 import BookDetails from './views/book-details';
+import Books from './views/books';
 
-const Routes = () => {
+const ErrorRoute = () => (
+  <Navigate to={RouteRegistry.notFound.path} replace={true} />
+)
+
+const AppRoutes = () => {
 
   return (
     <Router>
-      <Switch>
+      <Routes>
         <Route 
+          exact
+          path={RouteRegistry.appRoot.subroutes.browseBooks.path}
+          element={<Books />}
+        />
+        <Route 
+          exact
           path={RouteRegistry.appRoot.subroutes.bookDetails.path}
-          render={(props) => <BookDetails {...props} />}
+          element={<BookDetails />}
         />
         <Route
           path={RouteRegistry.userRoot.subroutes.login.path}
           exact
-          render={(props) => <SignIn {...props} />}
+          element={<SignIn />}
         />
         <Route
           path={RouteRegistry.contactUs.path}
           exact
-          render={(props) => <ContactUs {...props} />}
+          element={<ContactUs />}
         />
         <Route
           path={RouteRegistry.notFound.path}
           exact
-          render={(props) => <BookDetails {...props} />}
+          element={<BookDetails />}
         />
-        <Redirect to={RouteRegistry.notFound.path} />
-      </Switch>
+        <Route 
+          path="*"
+          element={<ErrorRoute />}
+        />
+        {/* <Navigate to={RouteRegistry.notFound.path} /> */}
+      </Routes>
     </Router>
   )
 }
 
-export default Routes;
+export default AppRoutes;

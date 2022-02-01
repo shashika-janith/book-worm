@@ -14,6 +14,9 @@ const RouteRegistry = {
   appRoot: {
     path: '/app',
     subroutes: {
+      browseBooks: {
+        path: '/books/browse'
+      },
       bookDetails: {
         path: '/details/:bookId'
       }

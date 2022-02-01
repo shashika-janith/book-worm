@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="d-flex justify-content-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <Feature icon="bi bi-truck" label="Free Delivery" info="Orders over $100" />
               <Feature icon="bi bi-credit-card-2-back" label="Secure Payment" info="100% secure payment" />
               <Feature icon="bi bi-check-circle" label="Money Back Guarantee" info="Within 30 days" />

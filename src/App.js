@@ -4,10 +4,10 @@ import Carousel from './home/carousel';
 import BookCategories from './home/book-categories';
 import AppLayout from './components/layouts/app-layout';
 import Newsletter from './components/newsletter';
-import BrowseBooks from './views/browse-books';
+import BrowseBooks from './views/books';
 import Footer from './components/footer';
 
-import Routes from './routes';
+import AppRoutes from './routes';
 
 import './assets/sass/main.scss';
 
@@ -24,7 +24,7 @@ function App() {
       <AppHeader />
       
       <AppLayout>
-        <Routes />
+        <AppRoutes />
       </AppLayout>
 
       <Footer />

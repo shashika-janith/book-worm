@@ -3,6 +3,10 @@
 .app-nav {
   background: $bg-dark-grey;
 
+  .ic-menu {
+    stroke: white;
+  }
+
   .ic-nav-item {
     font-size: 1.2rem;
   }

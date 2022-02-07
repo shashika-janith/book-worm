@@ -21,7 +21,6 @@ const BookDetails = () => {
 
   const handleTabChange = () => {}
 
-
   return (
     <>
       <div className="row book-details-wrapper">
@@ -46,15 +45,13 @@ const BookDetails = () => {
         </div>
       </div>
 
-      <div className="row justify-content-center book-details-wrapper">
-        <div className="col-auto">
-          <div className="divider tabs-divider" />
-          <div className="tabs tab-boxed my-2">
+      <div className="row mt-2 book-details-wrapper">
+        <div className="col-12">
+          <div className="tabs tabs-boxed justify-center">
             <a className="tab" tab-id={Tab.DESC} onClick={() => onSelectTab(Tab.DESC)}>Description</a>
             <a className="tab" tab-id={Tab.BOOK_DETAILS} onClick={() => onSelectTab(Tab.BOOK_DETAILS)}>Book Details</a>
             <a className="tab" tab-id={Tab.REVIEWS} onClick={() => onSelectTab(Tab.REVIEWS)}>Reviews</a>
           </div>
-          <div className="divider tabs-divider" />
         </div>
 
         <div className="col-12">

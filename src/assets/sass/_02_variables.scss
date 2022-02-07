@@ -1,7 +1,11 @@
-$orange: #f75454;
-$orange-accent: #f30b0b;
+// $orange: #f75454;
+// $orange-accent: #f30b0b;
 
-$text-dark: #161619;
+$purple: #6c5bd8;
+$purple-accent: #6c5bd8;
+$purple-light: #f2effe;
+
+$text-dark: #383838;
 $text-muted: #A3A3A3;
 
 $white: #fff;
@@ -11,5 +15,5 @@ $bg-warm-grey: #F5F5F4;
 $border-grey: #d3d3d3;
 $warm-grey-200: #E7E5E4;
 
-$theme-color-primary: $orange;
-$theme-color-primary-active: $orange-accent;
+$theme-color-primary: $purple;
+$theme-color-primary-active: $purple-accent;

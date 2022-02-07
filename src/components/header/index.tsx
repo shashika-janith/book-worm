@@ -8,7 +8,7 @@ import './index.scss';
 const AppHeader = () => {
 
   return (
-    <div className="container-fluid app-nav mb-2">
+    <div className="container-fluid app-nav mb-3">
       <div className="container">
         <div className="row">
           <div className="col-12">

@@ -1,7 +1,15 @@
 @import '../../assets/sass/02_variables';
 
+$content-height: 32px;
+
 .app-nav {
-  background: $bg-dark-grey;
+  // background: $bg-dark-grey;
+  border-bottom: 1px solid $warm-grey-200;  
+  .search-input {
+    background-color: rgba($warm-grey-200, 0.4);
+    height: $content-height;
+    min-height: initial;
+  }
 
   .ic-menu {
     stroke: white;
@@ -9,5 +17,15 @@
 
   .ic-nav-item {
     font-size: 1.2rem;
+  }
+
+  .btn {
+    height: $content-height;
+    min-height: initial;
+  }
+
+  .divider {
+    width: 1px;
+    background-color: $warm-grey-200;
   }
 }
